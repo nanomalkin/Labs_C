@@ -8,6 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*
+Малков Даниил 21ВИ1
+Массив array 
+Найти минимальный из локальных максимумов
+*/
+
 namespace Laba6_Bank
 {
     public partial class Form1 : Form
