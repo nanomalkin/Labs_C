@@ -1,0 +1,11 @@
+C:\Users\User\source\repos\Tehn_Obr_Labs\Laba7_Bank\Laba7_Bank\bin\Debug\Laba7_Bank.exe.config
+C:\Users\User\source\repos\Tehn_Obr_Labs\Laba7_Bank\Laba7_Bank\bin\Debug\Laba7_Bank.exe
+C:\Users\User\source\repos\Tehn_Obr_Labs\Laba7_Bank\Laba7_Bank\bin\Debug\Laba7_Bank.pdb
+C:\Users\User\source\repos\Tehn_Obr_Labs\Laba7_Bank\Laba7_Bank\obj\Debug\Laba7_Bank.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Tehn_Obr_Labs\Laba7_Bank\Laba7_Bank\obj\Debug\Laba7_Bank.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\source\repos\Tehn_Obr_Labs\Laba7_Bank\Laba7_Bank\obj\Debug\Laba7_Bank.Form1.resources
+C:\Users\User\source\repos\Tehn_Obr_Labs\Laba7_Bank\Laba7_Bank\obj\Debug\Laba7_Bank.Properties.Resources.resources
+C:\Users\User\source\repos\Tehn_Obr_Labs\Laba7_Bank\Laba7_Bank\obj\Debug\Laba7_Bank.csproj.GenerateResource.cache
+C:\Users\User\source\repos\Tehn_Obr_Labs\Laba7_Bank\Laba7_Bank\obj\Debug\Laba7_Bank.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Tehn_Obr_Labs\Laba7_Bank\Laba7_Bank\obj\Debug\Laba7_Bank.exe
+C:\Users\User\source\repos\Tehn_Obr_Labs\Laba7_Bank\Laba7_Bank\obj\Debug\Laba7_Bank.pdb
