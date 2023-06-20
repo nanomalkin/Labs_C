@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 /*
 Малков Даниил 21ВИ1
 Дана целочисленная матрица размера M × N. 
@@ -32,78 +33,55 @@ namespace Laba7_Bank
         }
         private void GenerateMatrixButton_Click(object sender, EventArgs e)
         {
-            int n = (int)numericUpDown1.Value; // Количество строк матрицы
-            int m = (int)numericUpDown2.Value; // Количество столбцов матрицы
+            int n = (int)numericUpDown1.Value;
+            int m = (int)numericUpDown2.Value;
 
             matrix = new List<List<int>>();
-
             Random random = new Random();
 
             for (int i = 0; i < n; i++){
                 List<int> row = new List<int>();
+                int length = random.Next(1, m + 1);
 
-                for (int j = 0; j < m; j++)
-                {
-                    row.Add(random.Next(-50, 50)); // Генерация случайных чисел для заполнения матрицы
-                }
-
+                for (int j = 0; j < length; j++)
+                    row.Add(random.Next(-50, 50)); 
                 matrix.Add(row);
             }
-
             DisplayMatrixInDataGridView(matrix);
         }
+
 
         private void DisplayMatrixInDataGridView(List<List<int>> matrix)
         {
             dataGridView1.Rows.Clear();
             dataGridView1.Columns.Clear();
 
-            // Добавляем столбцы в dataGridView1
-            for (int j = 0; j < matrix[0].Count; j++)
-            {
+            int maxColumnCount = matrix.Max(row => row.Count);
+            for (int j = 0; j < maxColumnCount; j++)
                 dataGridView1.Columns.Add($"Column{j + 1}", $"Столбец {j + 1}");
-            }
-
-            // Добавляем строки и заполняем ячейки dataGridView1
-            for (int i = 0; i < matrix.Count; i++)
-            {
+            for (int i = 0; i < matrix.Count; i++){
                 dataGridView1.Rows.Add();
-
                 for (int j = 0; j < matrix[i].Count; j++)
-                {
                     dataGridView1.Rows[i].Cells[j].Value = matrix[i][j];
-                }
             }
-
             foreach (DataGridViewColumn column in dataGridView1.Columns)
-            {
                 column.Width = 40;
-            }
         }
+
+
 
         private void FindLastRowWithEvenNumbersButton_Click(object sender, EventArgs e)
         {
-            if (matrix == null)
-            {
-                MessageBox.Show("Сначала сгенерируйте матрицу.");
-                return;
-            }
+            if (matrix == null) return;
 
             int lastRow = 0;
             int n = matrix.Count;
 
             for (int i = 0; i < n; i++)
-            {
                 if (matrix[i].All(x => x % 2 == 0))
-                {
                     lastRow = i + 1;
-                }
-            }
             if (lastRow > 0 && lastRow <= dataGridView1.Rows.Count)
-            {
                 dataGridView1.Rows[lastRow - 1].DefaultCellStyle.BackColor = Color.Red;
-            }
-
 
             label3.Text = "Найдена строка: " +lastRow;
         }
